@@ -6,18 +6,10 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700">
     <title>S3 GO!</title>
-    <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
-    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="./js/go.js"></script>
   </head>
   <body>
-    <div class="container">
-      <table>
-        <tr>
-          <td>Labeled<svg id="svg_main"></svg></td>
-          <td>Feature Grid<svg id="svg_grid"></svg></td>
-        </tr>
-      </table>
-      <script src="./js/go.js"></script>
-    </div>
+  	<input type="text" placeholder="S3 path..." id="search_bar" onkeydown="enter()">
+  	<button onclick="get_url()" id="go">GO!</button>      
   </body>
 </html>

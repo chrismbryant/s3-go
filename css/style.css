@@ -13,10 +13,11 @@ body {
 p {
   font-family: 'Ubuntu', sans-serif;
   font-size: 100px;
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, .3);
+  /*text-shadow: 1px 2px 4px rgba(0, 0, 0, .3);*/
   text-align: center;
   margin-top: 0;
   margin-bottom: 10px;
+  color: #232F3E;
 }
 
 #search-bar {
@@ -28,11 +29,11 @@ p {
 input {
   font-family: 'Ubuntu Mono', monospace;
   font-size: 18px;
-  color: #101010;
+  color: #232F3E;
   width: 60%;
   max-width: 800px;
   border: none;
-  box-shadow: 1px 2px 8px rgba(0, 0, 0, .4);
+  box-shadow: 1px 2px 8px rgba(35, 47, 62, .4);
   border-radius: 30px 0px 0px 30px;
   padding-left: 20px;
   padding-right: 10px;
@@ -49,19 +50,19 @@ button {
   font-size: 26px;
   color: white;
   border: none;
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, .2);
-  box-shadow: 1px 2px 8px rgba(0, 0, 0, .4);
+  /*text-shadow: 1px 2px 4px rgba(0, 0, 0, .2);*/
+  box-shadow: 1px 2px 8px rgba(35, 47, 62, .4);
   border-radius: 0px 30px 30px 0px;
   margin-left: 3px;
   padding-left: 15px;
   padding-right: 20px;
   height: 62px;
   vertical-align: middle;
-  background-color: #e47911;
+  background-color: #FF9900;
 }
 
 button:hover {
-  background-color: #73c2ff;
+  background-color: #73C2FF;
   cursor: pointer;
 }
 

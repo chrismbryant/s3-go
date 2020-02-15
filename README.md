@@ -1,4 +1,4 @@
-# s3-go
+# s3go.github.io
 Enter an S3 path. Go to the S3 URL.
 
 ---

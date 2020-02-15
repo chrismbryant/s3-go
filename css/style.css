@@ -12,7 +12,7 @@ body {
   transform: translate(0, -50%);
 }
 
-p {
+#title {
   font-family: 'Ubuntu', sans-serif;
   font-size: 100px;
   text-align: center;
@@ -25,6 +25,13 @@ p {
   width: 100%;
   display: inline-block;
   text-align: center;
+}
+
+#error-message {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 16px;
+  text-align: center;
+  color: red;
 }
 
 input {
@@ -68,5 +75,8 @@ button:hover {
 
 button:focus {
   outline: none;
+}
+
+button:active {
   background-color: gray;
 }

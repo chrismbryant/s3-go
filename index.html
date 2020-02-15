@@ -4,12 +4,17 @@
   <head>
     <meta charset = "utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono&display=swap" rel="stylesheet">
     <title>S3 GO!</title>
     <script src="./js/go.js"></script>
   </head>
-  <body>
-  	<input type="text" placeholder="S3 path..." id="search_bar" onkeydown="enter()">
-  	<button onclick="get_url()" id="go">GO!</button>      
+  <body onload="autoSelect();">
+    <div id="content">
+      <p>S3</p>
+      <span id="search-bar">
+        <input type="text" placeholder="s3://..." spellcheck=false id="search-input" onkeydown="enter()">
+        <button onclick="getUrl()" id="go">GO!</button>
+      </span>
+    </div>
   </body>
 </html>

@@ -10,7 +10,7 @@ function enter() {
   }            
 }
 
-function showError(s) {
+function showError() {
   var title = document.getElementById("title");
   $(title)
     .stop()
@@ -21,13 +21,12 @@ function showError(s) {
 
 function getUrl() {
   var input = document.getElementById("search-input").value;
-  var url = "";
   const pieces = input.split("//");
   if (pieces.length != 2) {
-    showError(input);
+    showError();
   } else {
     const suffix = pieces[pieces.length - 1];
-    url = "https://console.aws.amazon.com/s3/buckets/" + suffix;
+    const url = "https://console.aws.amazon.com/s3/buckets/" + suffix;
     window.location.href = url;
   } 
 }
